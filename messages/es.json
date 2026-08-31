@@ -85,14 +85,14 @@
       "success": "Mensaje enviado correctamente",
       "error": "Error al enviar el mensaje"
     },
-    "objectives": {
-      "title": "Nuestros objetivos",
-      "subtitle": "En LUMETRA nos guía una misión definida: fortalecer marcas mediante identidad, táctica y emoción.",
-      "list_title": "Nuestras metas se orientan a:",
-      "item1": "Consolidar la presencia digital de las marcas mediante una imagen armónica y cautivadora.",
-      "item2": "Desarrollar tácticas que fomenten vínculos emocionales y valor genuino en cada contacto.",
-      "item3": "Convertir la creatividad en logros cuantificables, perdurables y coherentes con tu visión corporativa."
-    }
+     "objectives": {
+    "title": "Nuestros objetivos",
+    "subtitle": "En LUMETRA nos guía una misión definida: fortalecer marcas mediante identidad, táctica y emoción.",
+    "list_title": "Nuestras metas se orientan a:",
+    "item1": "Consolidar la presencia digital de las marcas mediante una imagen armónica y cautivadora.",
+    "item2": "Desarrollar tácticas que fomenten vínculos emocionales y valor genuino en cada contacto.",
+    "item3": "Convertir la creatividad en logros cuantificables, perdurables y coherentes con tu visión corporativa."
+  }
   },
   "shop": {
     "title": "Tienda",

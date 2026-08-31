@@ -86,13 +86,13 @@
       "error": "Error sending message"
     },
     "objectives": {
-      "title": "Our objectives",
-      "subtitle": "At LUMETRA we are guided by a defined mission: to strengthen brands through identity, tactics, and emotion.",
-      "list_title": "Our goals are focused on:",
-      "item1": "Consolidating the digital presence of brands through a harmonious and captivating image.",
-      "item2": "Developing tactics that foster emotional bonds and genuine value in every interaction.",
-      "item3": "Converting creativity into quantifiable, sustainable achievements aligned with your corporate vision."
-    }
+    "title": "Our objectives",
+    "subtitle": "At LUMETRA we are guided by a defined mission: to strengthen brands through identity, tactics, and emotion.",
+    "list_title": "Our goals are focused on:",
+    "item1": "Consolidating the digital presence of brands through a harmonious and captivating image.",
+    "item2": "Developing tactics that foster emotional bonds and genuine value in every interaction.",
+    "item3": "Converting creativity into quantifiable, sustainable achievements aligned with your corporate vision."
+  }
   },
   "shop": {
     "title": "Shop",

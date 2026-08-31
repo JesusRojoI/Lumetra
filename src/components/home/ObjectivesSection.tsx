@@ -122,13 +122,6 @@ export default function ObjectivesSection() {
                 {/* Anillo decorativo */}
                 <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/20 animate-spin-slow" />
               </div>
-
-              {/* Etiqueta debajo */}
-              <div className="mt-6 text-center">
-                <span className="text-gold font-bold text-lg">
-                  {t('objective')} {objective.id}
-                </span>
-              </div>
             </div>
           ))}
         </div>
