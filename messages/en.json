@@ -1,0 +1,228 @@
+{
+  "common": {
+    "brand": "LUMETRA",
+    "tagline": "We create advertising that feels",
+    "buttons": {
+      "discoverMore": "Discover more",
+      "letsTalk": "Let's talk",
+      "startProject": "Start your project",
+      "moreServices": "More services",
+      "addToCart": "Add to cart",
+      "viewCart": "View cart",
+      "checkout": "Checkout",
+      "send": "Send",
+      "pay": "Pay",
+      "quote": "Quote",
+      "continueShopping": "Continue shopping",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "header": {
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact",
+      "cart": "Cart",
+      "subtotal": "Subtotal",
+      "viewCart": "View cart",
+      "checkout": "Checkout"
+    },
+    "footer": {
+      "payments": "We accept Visa and Master Card payments",
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "refunds": "Refund and Cancellation Policy",
+      "rights": "All rights reserved"
+    },
+    "language": {
+      "spanish": "Spanish",
+      "english": "English",
+      "select": "Select language"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Advertising that awakens emotions, not just glances.",
+      "subtitle": "We combine strategy and imagination to forge memorable visual identities that communicate, inspire, and leave a lasting mark on your audience."
+    },
+    "about": {
+      "title": "We are the creative team that masters business language.",
+      "paragraph1": "We have torn down the old barrier between \"the strategist\" and \"the designer\". We are a versatile collective that handles both disciplines with ease.",
+      "paragraph2": "We understand finances and color combinations. We master KPIs (Key Performance Indicators) and typography.",
+      "paragraph3": "We act as the bridge between what your organization needs to achieve (business objectives) and what your audience longs to experience (emotional connection)."
+    },
+    "plans": {
+      "title": "Our plans",
+      "subtitle": "From modest initiatives to campaigns for established corporations, we have an alternative designed for you. Close support and priority attention to your growth throughout the entire process."
+    },
+    "why": {
+      "title": "Why choose our services?",
+      "paragraph1": "At LUMETRA we don't limit ourselves to creating strategies: we integrate them with the fundamental identity of your brand.",
+      "paragraph2": "Each initiative we develop stems from a thorough analysis of your essence, goals, and audience, to provide you with innovative, measurable, and purposeful proposals.",
+      "paragraph3": "We trust in the synergy between information, design, and emotion, which is why we merge research, creativity, and tactics so your brand engages, connects, and evolves.",
+      "advantages_title": "Benefits of working with us"
+    },
+    "contact_info": {
+      "title": "Let's talk about your project",
+      "subtitle": "Behind every influential brand lies an initial conversation.",
+      "description": "At LUMETRA we want to understand your perspective, your goals, and the challenges that motivate you to expand. We are passionate about turning ideas into visual experiences that generate empathy, inspire, and produce tangible results.",
+      "schedule": "Working hours",
+      "schedule_value": "from 8:30 to 6:30 pm",
+      "address": "Address",
+      "address_value": "Av. Tamaulipas 150, p.18, int.1801, Hipódromo Condesa, 06100, CDMX.",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "form": {
+      "title": "Fill out the following form and we will get in touch with you as soon as possible.",
+      "subtitle": "Share the details of your inquiry or project with us.",
+      "description": "Our team will analyze your message and respond promptly to provide you with the most suitable solution.",
+      "name": "Name *",
+      "email": "Email *",
+      "phone": "Phone",
+      "message": "Message *",
+      "message_placeholder": "Write your message here...",
+      "characters": "characters",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    },
+    "objectives": {
+      "title": "Our objectives",
+      "subtitle": "At LUMETRA we are guided by a defined mission: to strengthen brands through identity, tactics, and emotion.",
+      "list_title": "Our goals are focused on:",
+      "item1": "Consolidating the digital presence of brands through a harmonious and captivating image.",
+      "item2": "Developing tactics that foster emotional bonds and genuine value in every interaction.",
+      "item3": "Converting creativity into quantifiable, sustainable achievements aligned with your corporate vision."
+    }
+  },
+  "shop": {
+    "title": "Shop",
+    "showing": "Showing",
+    "of": "of",
+    "results": "results",
+    "sort": {
+      "default": "Default sorting",
+      "popularity": "Sort by popularity",
+      "latest": "Sort by latest",
+      "price_asc": "Sort by price: low to high",
+      "price_desc": "Sort by price: high to low"
+    }
+  },
+  "product": {
+    "description": "Description",
+    "quantity": "quantity",
+    "add_to_cart": "Add to cart",
+    "view_cart": "View cart",
+    "related_products": "Related products"
+  },
+  "custom_product": {
+    "cost": "Service Cost (MXN) + VAT",
+    "name": "Name *",
+    "email": "Email *",
+    "folio": "Agreed folio number *",
+    "description": "Agreed product description *",
+    "quantity": "Quantity",
+    "pay": "Pay",
+    "quote": "Quote",
+    "view_cart": "View cart",
+    "related_products": "Related products"
+  },
+  "cart": {
+    "title": "Cart",
+    "product": "Product",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "remove": "Remove",
+    "empty": "Your cart is empty",
+    "go_shop": "Go to shop",
+    "summary": "Cart totals",
+    "tax": "VAT",
+    "total": "Total",
+    "checkout": "Proceed to checkout",
+    "continue": "Continue shopping",
+    "custom": "Custom"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "billing_details": "Billing details",
+    "first_name": "First name *",
+    "last_name": "Last name *",
+    "company": "Company name (optional)",
+    "country": "Country/Region *",
+    "address": "Street address *",
+    "neighborhood": "Neighborhood, Apartment, room, stairs, etc. *",
+    "city": "Town / City *",
+    "state": "Region / State *",
+    "postal_code": "Postal code *",
+    "phone": "Phone *",
+    "email": "Email address *",
+    "notes": "Order notes (optional)",
+    "payment": "Credit or debit card",
+    "payment_description": "Complete your purchase by providing your payment details.",
+    "card_name": "Name on card",
+    "card_number": "Card number",
+    "expiry": "MM/YY",
+    "cvv": "CVV",
+    "order_summary": "Your order",
+    "subtotal": "Subtotal",
+    "tax": "VAT",
+    "total": "Total",
+    "place_order": "Place order",
+    "processing": "Processing payment..."
+  },
+  "success": {
+    "title": "Purchase Successful!",
+    "subtitle": "Your order has been processed successfully. We have sent an email with your purchase details.",
+    "order_details": "Order details",
+    "transaction": "Transaction",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "tax": "VAT",
+    "total": "Total",
+    "email_notice": "An email with your purchase details has been sent to your email address.",
+    "continue_shopping": "Continue shopping"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "last_updated": "Last updated: January 1, 2024",
+      "section1_title": "Information We Collect",
+      "section1_content": "At LUMETRA we collect personal information that you voluntarily provide when using our services, including name, email, phone number, and billing information. We also collect information about your use of our website through cookies and similar technologies.",
+      "section2_title": "Use of Information",
+      "section2_content": "We use the information collected to process your orders, improve our services, personalize your experience, and communicate with you about relevant updates and offers. We do not sell or share your personal information with unaffiliated third parties.",
+      "section3_title": "Data Protection",
+      "section3_content": "We implement technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Your payment data is processed by certified providers that comply with PCI DSS security standards.",
+      "section4_title": "Your Rights",
+      "section4_content": "You have the right to access, correct, update, or delete your personal information at any time. To exercise these rights, contact us at administracion@lumetra.mx.",
+      "contact_info": "Contact"
+    },
+    "terms": {
+      "title": "Terms and Conditions of Service",
+      "last_updated": "Last updated: January 1, 2024",
+      "section1_title": "Acceptance of Terms",
+      "section1_content": "By accessing and using LUMETRA's services, you agree to be bound by these terms and conditions. If you do not agree with any part of these terms, you should not use our services.",
+      "section2_title": "Service Description",
+      "section2_content": "LUMETRA offers digital marketing services, visual identity design, brand strategy, and creative content. Specific services are detailed in each of our plans and products.",
+      "section3_title": "Client Obligations",
+      "section3_content": "The client agrees to provide truthful and complete information, maintain the confidentiality of their access credentials, and use the services in accordance with applicable legislation.",
+      "section4_title": "Intellectual Property",
+      "section4_content": "All intellectual property rights over the services, content, and materials provided by LUMETRA belong to it. The client retains rights over their own materials and brand.",
+      "contact_info": "Contact"
+    },
+    "refunds": {
+      "title": "Refund and Cancellation Policy",
+      "last_updated": "Last updated: January 1, 2024",
+      "section1_title": "Cancellations",
+      "section1_content": "Clients may cancel their orders within 24 hours after purchase, provided the service has not been initiated. To request a cancellation, contact administracion@lumetra.mx.",
+      "section2_title": "Refunds",
+      "section2_content": "Refunds will be processed within 5 to 10 business days after approval of the request. The refund will be made through the same payment method used in the original purchase.",
+      "section3_title": "Exceptions",
+      "section3_content": "Refunds will not be granted for services that have already been initiated or completed. Custom services may have specific terms agreed upon with the client.",
+      "contact_info": "Contact"
+    }
+  },
+  "payment": {
+    "processing_error": "Error processing payment. Please try again.",
+    "success": "Payment processed successfully",
+    "declined": "Payment declined. Please verify your card information."
+  }
+}
