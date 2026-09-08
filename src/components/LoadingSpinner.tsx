@@ -4,7 +4,7 @@ import React from 'react';
 
 interface LoadingSpinnerProps {
   size?: 'small' | 'medium' | 'large';
-  color?: string;
+  color?: 'primary' | 'accent' | 'white' | 'gold';
 }
 
 export default function LoadingSpinner({

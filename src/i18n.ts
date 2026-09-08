@@ -1,13 +1,17 @@
 import { getRequestConfig } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-
-export const locales = ['es', 'en'] as const;
-export type Locale = (typeof locales)[number];
 
 export default getRequestConfig(async ({ locale }) => {
-  if (!locales.includes(locale as Locale)) notFound();
-
-  return {
-    messages: (await import(`../messages/${locale}.json`)).default
-  };
+  // Usar 'es' como locale por defecto si no hay locale
+  const currentLocale = locale || 'es';
+  
+  try {
+    return {
+      messages: (await import(`../messages/${currentLocale}.json`)).default
+    };
+  } catch (error) {
+    // Fallback a español si no encuentra el archivo
+    return {
+      messages: (await import(`../messages/es.json`)).default
+    };
+  }
 });

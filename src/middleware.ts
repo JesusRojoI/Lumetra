@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  return NextResponse.next();
+  const response = NextResponse.next();
+  
+  // Establecer el locale en los headers
+  response.headers.set('x-next-intl-locale', 'es');
+  
+  return response;
 }
 
 export const config = {
