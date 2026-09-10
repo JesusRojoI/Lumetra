@@ -1,0 +1,72 @@
+===== src\middleware.ts =====
+import { NextRequest, NextResponse } from 'next/server';
+
+export function middleware(request: NextRequest) {
+  const response = NextResponse.next();
+  
+  // Establecer el locale en los headers
+  response.headers.set('x-next-intl-locale', 'es');
+  
+  return response;
+}
+
+export const config = {
+  matcher: ['/((?!api|_next|.*\\..*).*)']
+};
+===== src\i18n.ts =====
+import { getRequestConfig } from 'next-intl/server';
+
+export default getRequestConfig(async ({ locale }) => {
+  // Usar 'es' como locale por defecto si no hay locale
+  const currentLocale = locale || 'es';
+  
+  try {
+    return {
+      messages: (await import(`../messages/${currentLocale}.json`)).default
+    };
+  } catch (error) {
+    // Fallback a español si no encuentra el archivo
+    return {
+      messages: (await import(`../messages/es.json`)).default
+    };
+  }
+});
+===== src\app\providers.tsx =====
+'use client';
+
+import { NextIntlClientProvider } from 'next-intl';
+import { CartProvider } from '@/context/CartContext';
+import { LanguageProvider } from '@/context/LanguageContext';
+import { useState, useEffect } from 'react';
+import esMessages from '../../messages/es.json';
+import enMessages from '../../messages/en.json';
+
+const messagesMap = {
+  es: esMessages,
+  en: enMessages,
+};
+
+export function Providers({ children }: { children: React.ReactNode }) {
+  const [locale, setLocale] = useState('es');
+  const [messages, setMessages] = useState<any>(esMessages);
+
+  useEffect(() => {
+    const savedLocale = localStorage.getItem('locale') || 'es';
+    setLocale(savedLocale);
+    setMessages(messagesMap[savedLocale as keyof typeof messagesMap] || esMessages);
+  }, []);
+
+  const changeLanguage = (newLocale: string) => {
+    setLocale(newLocale);
+    localStorage.setItem('locale', newLocale);
+    setMessages(messagesMap[newLocale as keyof typeof messagesMap] || esMessages);
+  };
+
+  return (
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <LanguageProvider value={{ locale, setLocale: changeLanguage }}>
+        <CartProvider>{children}</CartProvider>
+      </LanguageProvider>
+    </NextIntlClientProvider>
+  );
+}

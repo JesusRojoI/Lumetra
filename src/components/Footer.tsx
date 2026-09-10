@@ -3,15 +3,18 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { useTranslations } from 'next-intl';
 
 export default function Footer() {
   const { locale, setLocale } = useLanguage();
   const t = useTranslations('common');
+  const router = useRouter();
 
   const handleLanguageChange = () => {
     setLocale(locale === 'es' ? 'en' : 'es');
+    router.refresh();
   };
 
   return (

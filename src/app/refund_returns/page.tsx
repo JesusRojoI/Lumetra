@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useTranslations } from 'next-intl';
 
-export default function RefundPolicyPage() {
+export default function RefundReturnsPage() {
   const t = useTranslations('legal.refunds');
 
   return (
@@ -13,48 +13,47 @@ export default function RefundPolicyPage() {
       <Header />
       <main className="flex-grow pt-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-4xl font-bold text-primary mb-8 font-unna text-center">
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary mb-2 font-unna">
             {t('title')}
           </h1>
-          
-          <div className="bg-white rounded-lg shadow-custom p-8 space-y-6">
-            <p className="text-gray-600">
-              {t('last_updated')}
-            </p>
+          <p className="text-lg text-gray-700 mb-8">{t('company')}</p>
 
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4 font-unna">
-                {t('section1_title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('section1_content')}
-              </p>
-            </section>
+          <p className="text-gray-700 mb-8">{t('intro')}</p>
 
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4 font-unna">
-                {t('section2_title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('section2_content')}
-              </p>
-            </section>
+          {Array.from({ length: 8 }, (_, i) => i + 1).map((n) => {
+            const titleKey = `section${n}_title` as any;
+            const paragraphsKey = `section${n}_paragraphs` as any;
+            const itemsKey = `section${n}_items` as any;
 
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4 font-unna">
-                {t('section3_title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('section3_content')}
-              </p>
-            </section>
+            const hasParagraphs = t.has ? t.has(paragraphsKey) : false;
+            const hasItems = t.has ? t.has(itemsKey) : false;
 
-            <div className="mt-8 p-4 bg-cream rounded-lg">
-              <p className="text-sm text-gray-500">
-                {t('contact_info')}: administracion@lumetra.mx
-              </p>
-            </div>
-          </div>
+            return (
+              <section key={n} className="mb-6">
+                <h2 className="text-xl font-bold text-primary mb-3 font-unna">
+                  {t(titleKey)}
+                </h2>
+
+                {hasParagraphs &&
+                  (t.raw(paragraphsKey) as string[]).map((p, i) => (
+                    <p key={i} className="text-gray-700 mb-3">
+                      {p}
+                    </p>
+                  ))}
+
+                {hasItems && (
+                  <ul className="list-none space-y-2 text-gray-700">
+                    {(t.raw(itemsKey) as string[]).map((item, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span className="shrink-0">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            );
+          })}
         </div>
       </main>
       <Footer />

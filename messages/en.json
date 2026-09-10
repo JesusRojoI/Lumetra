@@ -183,42 +183,172 @@
   },
   "legal": {
     "privacy": {
-      "title": "Privacy Policy",
-      "last_updated": "Last updated: January 1, 2024",
-      "section1_title": "Information We Collect",
-      "section1_content": "At LUMETRA we collect personal information that you voluntarily provide when using our services, including name, email, phone number, and billing information. We also collect information about your use of our website through cookies and similar technologies.",
-      "section2_title": "Use of Information",
-      "section2_content": "We use the information collected to process your orders, improve our services, personalize your experience, and communicate with you about relevant updates and offers. We do not sell or share your personal information with unaffiliated third parties.",
-      "section3_title": "Data Protection",
-      "section3_content": "We implement technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Your payment data is processed by certified providers that comply with PCI DSS security standards.",
-      "section4_title": "Your Rights",
-      "section4_content": "You have the right to access, correct, update, or delete your personal information at any time. To exercise these rights, contact us at administracion@lumetra.mx.",
-      "contact_info": "Contact"
-    },
+  "title": "Privacy Policy",
+  "subtitle": "PROTECTION OF PERSONAL INFORMATION",
+  "company": "AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "responsible": "Controller: AGENCIA DIGITAL 21FEET S.A. DE C.V. | Location: Av. Tamaulipas 150, Piso 18, Int. 1801, Col. Hipódromo, Cuauhtémoc, 06100, CDMX",
+  "section1_title": "WHAT INFORMATION DO WE COLLECT AND WHY?",
+  "section1_paragraphs": [
+    "When you purchase digital marketing, branding, or advertising services in our online store, we process your personal information under the legal framework of the Mexican Federal Law on the Protection of Personal Data Held by Private Parties.",
+    "We use your financial information (bank details, payment information) exclusively to process transactions. We work with PCI-DSS certified payment processors that encrypt this information. We do NOT store full card numbers on our servers.",
+    "Your billing information (RFC, company name, fiscal address, tax regime) is required by the SAT to issue valid electronic invoices. We retain it for the period established by Mexican tax legislation.",
+    "Your email address allows us to communicate with you about the services you purchased: order confirmation, project progress, delivery of final files, and resolution of technical questions.",
+    "Your browsing information (pages you visit, services you view, time on the site) is analyzed through Google Analytics to improve the shopping experience and optimize our catalog. This includes analytics cookies that you can disable from your browser."
+  ],
+  "section2_title": "DO WE SHARE YOUR INFORMATION?",
+  "section2_paragraphs": [
+    "Only with these third parties necessary to operate the business:"
+  ],
+  "section2_items": [
+    "→ Payment gateways (or other certified processors) to execute transactions",
+    "→ Hosting and cloud storage providers where our store resides",
+    "→ Tax authorities when required by law"
+  ],
+  "section2_footer": "All these providers operate under confidentiality agreements and comply with information security standards.",
+  "section3_title": "YOUR RIGHTS OVER YOUR INFORMATION",
+  "section3_items": [
+    "ACCESS: Request a copy of all the information we have about you",
+    "RECTIFY: Correct incorrect or outdated data",
+    "CANCEL: Delete your information from our databases",
+    "OBJECT: Refuse the use of your data for specific purposes",
+    "REVOKE CONSENT: Withdraw your authorization at any time"
+  ],
+  "section4_title": "How to exercise these rights?",
+  "section4_paragraphs": [
+    "Send an email to administracion@lumetra.mx with:"
+  ],
+  "section4_items": [
+    "● Your full name and registered email",
+    "● Copy of official identification",
+    "● Clear description of what you are requesting"
+  ],
+  "section4_footer": "We will respond within a maximum of 20 business days.",
+  "section5_title": "SECURITY OF YOUR INFORMATION",
+  "section5_paragraphs": [
+    "We implement SSL/TLS protocols to encrypt data transmission, restricted access controls to sensitive information, periodic encrypted backups, and continuous monitoring of security vulnerabilities."
+  ],
+  "section6_title": "COOKIES AND TRACKING TECHNOLOGIES",
+  "section6_paragraphs": [
+    "We use essential cookies for the shopping cart to work and analytics cookies to understand how you use the site.",
+    "You can configure your browser to reject cookies, although this may affect some store functionalities."
+  ],
+  "section7_title": "MINORS",
+  "section7_paragraphs": [
+    "Our services are aimed at companies and professionals over 18 years of age. We do not intentionally collect information from minors."
+  ],
+  "section8_title": "CHANGES TO THIS NOTICE",
+  "section8_paragraphs": [
+    "We may update this document to reflect changes in our practices or legislation. The updated version will always be available on our site with the date of last modification."
+  ],
+  "section9_title": "JURISDICTION",
+  "section9_paragraphs": [
+    "This notice is governed by Mexican laws. Any controversy will be resolved before the competent courts of Mexico City."
+  ]
+},
     "terms": {
-      "title": "Terms and Conditions of Service",
-      "last_updated": "Last updated: January 1, 2024",
-      "section1_title": "Acceptance of Terms",
-      "section1_content": "By accessing and using LUMETRA's services, you agree to be bound by these terms and conditions. If you do not agree with any part of these terms, you should not use our services.",
-      "section2_title": "Service Description",
-      "section2_content": "LUMETRA offers digital marketing services, visual identity design, brand strategy, and creative content. Specific services are detailed in each of our plans and products.",
-      "section3_title": "Client Obligations",
-      "section3_content": "The client agrees to provide truthful and complete information, maintain the confidentiality of their access credentials, and use the services in accordance with applicable legislation.",
-      "section4_title": "Intellectual Property",
-      "section4_content": "All intellectual property rights over the services, content, and materials provided by LUMETRA belong to it. The client retains rights over their own materials and brand.",
-      "contact_info": "Contact"
-    },
+  "title": "TERMS AND CONDITIONS OF SERVICE",
+  "company": "AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "last_updated": "Effective: September 2026",
+  "intro": "Welcome to our digital store. By making a purchase or contracting any service, you agree to be legally bound by these terms.",
+  "section1_title": "ACCEPTANCE AND LEGAL CAPACITY",
+  "section1_content": "You confirm that you are over 18 years of age and have the legal capacity to enter into binding contracts. If you are acting on behalf of a company, you guarantee that you have the authority to legally bind it.",
+  "section2_title": "SERVICE CATALOG AND PRICES",
+  "section2_content": "We offer digital marketing, branding, graphic design, and advertising services organized in packages with specific scopes. All prices include VAT and are expressed in Mexican pesos. We reserve the right to modify prices without prior notice, always respecting commitments already acquired.",
+  "section3_title": "CONTRACTING PROCESS",
+  "section3_content": "Step 1 – Selection: You add the desired service to the shopping cart\nStep 2 – Checkout: You provide contact and billing information\nStep 3 – Payment: You process the payment through the enabled gateways\nStep 4 – Confirmation: You receive an email with purchase confirmation and electronic invoice.\nThe purchase is completed when you receive the confirmation by email. Until that moment, a valid contract exists between the parties.",
+  "section4_title": "ACCEPTED PAYMENT METHODS",
+  "section4_content": "We accept payments via credit and debit cards issued by national and international banking institutions operating in Mexico. All charges are processed in Mexican pesos (MXN) through our secure payment gateway, which complies with the highest standards of data protection and confidentiality.\nThe prices of products and services are expressed in Mexican pesos (MXN) and are plus VAT, unless expressly indicated otherwise. The total amount payable, including applicable taxes and fees, will be shown before confirming the transaction.\nPayment processing will be considered successful once the banking institution has authorized the operation and the system confirms receipt of the corresponding amount.",
+  "section5_title": "CLIENT OBLIGATIONS",
+  "section5_content": "Provide complete and truthful information: Contact details, project specifications, necessary materials (logos, photographs, texts, platform access).\nRespond on time: You have 5 business days to review and approve each deliverable. If you do not respond within this period, it is considered automatically approved and we continue with the next phase.\nProvide necessary access: For services that require social media management, email marketing, or digital advertising, you must provide administrator credentials or necessary permissions.\nComply with copyright: You guarantee that any material you provide us (images, texts, music) does not infringe third-party rights.",
+  "section6_title": "DELIVERABLES AND DEADLINES",
+  "section6_content": "Each service has scopes, characteristics, and objectives clearly defined in its description or commercial proposal, which determine the type and number of committed deliverables. Before starting any project, an estimated execution and delivery schedule will be agreed with the client, adapted to the complexity, volume of work, and particular needs of each case.\nDelivery deadlines will begin to run only from the moment the client has provided all the information, materials, files, or access necessary for the correct development of the service. Any delay in the delivery of such elements may affect the originally planned schedule, without implying non-compliance on the part of the company.\nIf modifications, adjustments, or additional deliveries not initially contemplated are required, these will be quoted and scheduled separately. Likewise, final deliverables will be considered completed once they have been validated and approved by the client, in accordance with the terms of the contracted service.",
+  "section7_title": "REVISIONS AND MODIFICATIONS",
+  "section7_content": "Each service includes a specific number of revision rounds as indicated in its description. Additional revisions outside the contracted scope will be charged as an extraordinary service.\nA \"revision\" means adjustments to the presented work. Changes that involve completely redoing the concept or creative direction are considered a new project.",
+  "section8_title": "INTELLECTUAL PROPERTY",
+  "section8_content": "Final delivered work: Once the service is fully paid, we transfer the usage rights over the deliverables to you so you can use them in your business. We retain the right to use the project in our portfolio and promotional materials.\nSource files: We do not include editable files (PSD, AI, etc.) unless expressly indicated in the service description. If you require them, you can request them at an additional cost.\n21 Feet Brand: All our developments, methodologies, processes, and brand are the exclusive property of AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "section9_title": "SUSPENSION AND TERMINATION",
+  "section9_content": "We may suspend or cancel the service if:\n● You provide false or fraudulent information\n● You fail to comply with your payment obligations\n● You use our services for illegal or unethical purposes\n● You disrespect the team or maintain abusive conduct\nIn case of early termination for reasons attributable to the client, no refund applies.",
+  "section10_title": "LIMITATION OF LIABILITY",
+  "section10_content": "Our marketing and advertising services do not guarantee specific sales, reach, or engagement results. We work with industry best practices, but results depend on multiple factors beyond our control (market, competition, product, timing, budget).\nWe are not responsible for losses of commercial opportunity, indirect damages, suspension of accounts on third-party platforms, changes in social media algorithms, or technical problems on external servers.\nOur maximum liability is limited to the amount paid for the specific service in question.",
+  "section11_title": "CONFIDENTIALITY",
+  "section11_content": "We keep confidential all strategic, commercial, or sensitive information that you share during the provision of the service. We do not disclose it to third parties unless necessary to execute the project. This obligation remains in force even after the commercial relationship ends.",
+  "section12_title": "FORCE MAJEURE",
+  "section12_content": "We will not be responsible for delays or non-compliance caused by circumstances beyond our reasonable control: natural disasters, pandemics, armed conflicts, power outages, internet service failures, regulatory changes, or suspensions of third-party digital platforms.",
+  "section13_title": "APPLICABLE LAW AND JURISDICTION",
+  "section13_content": "These terms are governed by the laws of the United Mexican States. Any dispute will be resolved in the competent courts of Mexico City, waiving any other jurisdiction.",
+  "section14_title": "NOTIFICATIONS",
+  "section14_content": "All official communications are made to the email address provided during the purchase. It is your responsibility to keep it updated and review it regularly, including the spam folder.",
+  "section15_title": "SEVERABILITY",
+  "section15_content": "If any clause of these terms is declared invalid or unenforceable, the rest remains in force and binding.",
+  "section16_title": "MODIFICATIONS",
+  "section16_content": "We may update these terms occasionally. Changes apply to future purchases. Services already contracted are governed by the terms in force at the time of purchase.",
+  "validity": "Effective: September 2026",
+  "contact_info": "Contact"
+},
     "refunds": {
-      "title": "Refund and Cancellation Policy",
-      "last_updated": "Last updated: January 1, 2024",
-      "section1_title": "Cancellations",
-      "section1_content": "Clients may cancel their orders within 24 hours after purchase, provided the service has not been initiated. To request a cancellation, contact administracion@lumetra.mx.",
-      "section2_title": "Refunds",
-      "section2_content": "Refunds will be processed within 5 to 10 business days after approval of the request. The refund will be made through the same payment method used in the original purchase.",
-      "section3_title": "Exceptions",
-      "section3_content": "Refunds will not be granted for services that have already been initiated or completed. Custom services may have specific terms agreed upon with the client.",
-      "contact_info": "Contact"
-    }
+  "title": "Returns and Refunds Policy",
+  "company": "AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "intro": "This policy establishes the procedures and conditions under which you may request the cancellation of services contracted in our digital store.",
+  "section1_title": "NATURE OF THE SERVICES",
+  "section1_paragraphs": [
+    "The services offered by 21 Feet are digital, personalized, and custom-made, so from the moment of payment, human, technical, and creative resources are allocated immediately.",
+    "Therefore, all cancellation or refund requests are analyzed individually, according to the moment the request is submitted and the status of the project."
+  ],
+  "section2_title": "CANCELLATION REASONS",
+  "section2_paragraphs": [
+    "Cancellations may only be requested under the following circumstances:"
+  ],
+  "section2_items": [
+    "By client decision: the client may withdraw from the service at any time; however, this does not generate a right to a refund, in accordance with the conditions of this policy.",
+    "Due to client non-compliance: if the client does not provide the information, materials, or access necessary for the execution of the service, does not respond to communications, or fails to comply with their contractual obligations, the project may be terminated without any refund.",
+    "For reasons attributable to 21 Feet: if for reasons directly attributable to 21 Feet it is not possible to execute the contracted service, the amount paid will be refunded, provided that the development of the project has not begun."
+  ],
+  "section3_title": "CASES WHERE NO REFUND APPLIES",
+  "section3_paragraphs": [
+    "No type of refund will apply in the following cases:"
+  ],
+  "section3_items": [
+    "When the project has started partially or totally.",
+    "When the client decides to cancel for personal or convenience reasons, without any non-compliance on the part of 21 Feet.",
+    "When the delay or impossibility of execution derives from the client's lack of response or delivery of information.",
+    "When the service involves investment in advertising, hiring third parties, or purchasing external resources, since these amounts are non-recoverable.",
+    "When chargebacks or bank disputes initiated unilaterally by the client have been incurred."
+  ],
+  "section4_title": "CANCELLATION AND REFUND PROCEDURE",
+  "section4_items": [
+    "1. Formal request: the client must send a written request to the email administracion@lumetra.mx, indicating:",
+    "○ Full name or company name.",
+    "○ Order number or purchase reference.",
+    "○ Contracted service.",
+    "○ Reason for the request.",
+    "2. Evaluation: the 21 Feet team will analyze the request and verify the status of the project and the applicable conditions.",
+    "3. Resolution: the client will receive a response by email within a maximum of 5 business days, indicating whether or not the refund applies.",
+    "4. Refund method: if applicable, the refund will be made exclusively through the same payment method used at the time of purchase.",
+    "The crediting time will depend on the banking institution or payment platform, and may take between 5 and 20 business days once authorized."
+  ],
+  "section5_title": "BILLING ERRORS",
+  "section5_paragraphs": [
+    "In case of duplicate charges or errors in payment processing, the operation will be verified and, once the error is confirmed, the immediate refund will be processed through the same payment method."
+  ],
+  "section6_title": "DISPUTES AND CHARGEBACKS",
+  "section6_paragraphs": [
+    "Before initiating any bank dispute or chargeback, the client must exhaust the internal review and refund process provided in this policy.",
+    "In the event that a chargeback is filed without prior notice:"
+  ],
+  "section6_items": [
+    "The service will be suspended immediately.",
+    "The corresponding evidence will be provided to the financial institution.",
+    "The possibility of future contracts with 21 Feet may be limited."
+  ],
+  "section7_title": "MODIFICATIONS AND APPLICATION",
+  "section7_paragraphs": [
+    "This policy may be updated to reflect changes in our operations or in applicable legislation. Cancellation and refund requests will be governed by the version in force at the time of their submission."
+  ],
+  "section8_title": "CONTACT",
+  "section8_paragraphs": [
+    "For any request or clarification related to cancellations or refunds, you may contact the email: administracion@lumetra.mx"
+  ]
+}
   },
   "payment": {
     "processing_error": "Error processing payment. Please try again.",

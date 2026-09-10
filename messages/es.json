@@ -183,42 +183,172 @@
   },
   "legal": {
     "privacy": {
-      "title": "Política de Privacidad",
-      "last_updated": "Última actualización: 1 de enero de 2024",
-      "section1_title": "Información que recopilamos",
-      "section1_content": "En LUMETRA recopilamos información personal que usted nos proporciona voluntariamente al utilizar nuestros servicios, incluyendo nombre, correo electrónico, número de teléfono y datos de facturación. También recopilamos información sobre su uso de nuestro sitio web mediante cookies y tecnologías similares.",
-      "section2_title": "Uso de la información",
-      "section2_content": "Utilizamos la información recopilada para procesar sus pedidos, mejorar nuestros servicios, personalizar su experiencia y comunicarnos con usted sobre actualizaciones y ofertas relevantes. No vendemos ni compartimos su información personal con terceros no afiliados.",
-      "section3_title": "Protección de datos",
-      "section3_content": "Implementamos medidas de seguridad técnicas y organizativas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción. Sus datos de pago son procesados por proveedores certificados que cumplen con estándares de seguridad PCI DSS.",
-      "section4_title": "Sus derechos",
-      "section4_content": "Usted tiene derecho a acceder, corregir, actualizar o eliminar su información personal en cualquier momento. Para ejercer estos derechos, contáctenos a través de administracion@lumetra.mx.",
-      "contact_info": "Contacto"
-    },
+  "title": "Politica de privacidad",
+  "subtitle": "PROTECCIÓN DE INFORMACIÓN PERSONAL",
+  "company": "AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "responsible": "Responsable: AGENCIA DIGITAL 21FEET S.A. DE C.V. | Ubicación: Av. Tamaulipas 150, Piso 18, Int. 1801, Col. Hipódromo, Cuauhtémoc, 06100, CDMX",
+  "section1_title": "¿QUÉ INFORMACIÓN RECOPILAMOS Y POR QUÉ?",
+  "section1_paragraphs": [
+    "Cuando compras servicios de marketing digital, branding o publicidad en nuestra tienda online, procesamos tu información personal bajo el marco legal de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.",
+    "Tu información financiera (datos bancarios, información de pago) la utilizamos exclusivamente para procesar transacciones. Trabajamos con procesadores de pago certificados PCI-DSS que encriptan esta información. Nosotros NO almacenamos números completos de tarjeta en nuestros servidores.",
+    "Tus datos de facturación (RFC, razón social, domicilio fiscal, régimen) los requiere el SAT para emitir facturas electrónicas válidas. Los conservamos por el tiempo que marca la legislación fiscal mexicana.",
+    "Tu correo electrónico nos permite comunicarnos contigo sobre los servicios que compraste: confirmación de pedido, avances del proyecto, entrega de archivos finales, y resolución de dudas técnicas.",
+    "Tu información de navegación (páginas que visitas, servicios que consultas, tiempo en el sitio) la analizamos mediante Google Analytics para mejorar la experiencia de compra y optimizar nuestro catálogo. Esto incluye cookies de análisis que puedes desactivar desde tu navegador."
+  ],
+  "section2_title": "¿COMPARTIMOS TU INFORMACIÓN?",
+  "section2_paragraphs": [
+    "Únicamente con estos terceros necesarios para operar el negocio:"
+  ],
+  "section2_items": [
+    "→ Pasarelas de pago (u otros procesadores certificados) para ejecutar transacciones",
+    "→ Proveedores de hosting y almacenamiento en la nube donde reside nuestra tienda",
+    "→ Autoridades fiscales cuando lo requiera la ley"
+  ],
+  "section2_footer": "Todos estos proveedores operan bajo acuerdos de confidencialidad y cumplen con estándares de seguridad informática.",
+  "section3_title": "TUS DERECHOS SOBRE TU INFORMACIÓN",
+  "section3_items": [
+    "ACCEDER: Solicitar una copia de toda la información que tenemos sobre ti",
+    "RECTIFICAR: Corregir datos incorrectos o desactualizados",
+    "CANCELAR: Eliminar tu información de nuestras bases de datos",
+    "OPONERTE: Negarte al uso de tus datos para fines específicos",
+    "REVOCAR CONSENTIMIENTO: Retirar tu autorización en cualquier momento"
+  ],
+  "section4_title": "¿Cómo ejercer estos derechos?",
+  "section4_paragraphs": [
+    "Envía un correo a administracion@lumetra.mx con:"
+  ],
+  "section4_items": [
+    "● Tu nombre completo y correo registrado",
+    "● Copia de identificación oficial",
+    "● Descripción clara de lo que solicitas"
+  ],
+  "section4_footer": "Responderemos en máximo 20 días hábiles.",
+  "section5_title": "SEGURIDAD DE TU INFORMACIÓN",
+  "section5_paragraphs": [
+    "Implementamos protocolos SSL/TLS para encriptar la transmisión de datos, controles de acceso restringido a información sensible, respaldos periódicos encriptados, y monitoreo continuo de vulnerabilidades de seguridad."
+  ],
+  "section6_title": "COOKIES Y TECNOLOGÍAS DE RASTREO",
+  "section6_paragraphs": [
+    "Usamos cookies esenciales para que el carrito de compras funcione y cookies analíticas para entender cómo usas el sitio.",
+    "Puedes configurar tu navegador para rechazar cookies, aunque esto puede afectar algunas funcionalidades de la tienda."
+  ],
+  "section7_title": "MENORES DE EDAD",
+  "section7_paragraphs": [
+    "Nuestros servicios están dirigidos a empresas y profesionales mayores de 18 años. No recopilamos intencionalmente información de menores."
+  ],
+  "section8_title": "CAMBIOS A ESTE AVISO",
+  "section8_paragraphs": [
+    "Podemos actualizar este documento para reflejar cambios en nuestras prácticas o en la legislación. La versión actualizada siempre estará disponible en nuestro sitio con la fecha de última modificación."
+  ],
+  "section9_title": "JURISDICCIÓN",
+  "section9_paragraphs": [
+    "Este aviso se rige por las leyes mexicanas. Cualquier controversia se resolverá ante los tribunales competentes de la Ciudad de México."
+  ]
+},
     "terms": {
-      "title": "Términos y Condiciones de Servicio",
-      "last_updated": "Última actualización: 1 de enero de 2024",
-      "section1_title": "Aceptación de términos",
-      "section1_content": "Al acceder y utilizar los servicios de LUMETRA, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestros servicios.",
-      "section2_title": "Descripción del servicio",
-      "section2_content": "LUMETRA ofrece servicios de marketing digital, diseño de identidad visual, estrategia de marca y contenido creativo. Los servicios específicos se detallan en cada uno de nuestros planes y productos.",
-      "section3_title": "Obligaciones del cliente",
-      "section3_content": "El cliente se compromete a proporcionar información veraz y completa, mantener la confidencialidad de sus credenciales de acceso y utilizar los servicios de acuerdo con la legislación aplicable.",
-      "section4_title": "Propiedad intelectual",
-      "section4_content": "Todos los derechos de propiedad intelectual sobre los servicios, contenido y materiales proporcionados por LUMETRA son de su titularidad. El cliente conserva los derechos sobre sus propios materiales y marca.",
-      "contact_info": "Contacto"
-    },
+  "title": "TÉRMINOS Y CONDICIONES DE SERVICIO",
+  "company": "AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "last_updated": "Vigencia: Septiembre 2026",
+  "intro": "Bienvenido a nuestra tienda digital. Al realizar una compra o contratar cualquier servicio, aceptas estar legalmente vinculado por estos términos.",
+  "section1_title": "ACEPTACIÓN Y CAPACIDAD LEGAL",
+  "section1_content": "Confirmas que eres mayor de 18 años y tienes capacidad legal para celebrar contratos vinculantes. Si actúas en representación de una empresa, garantizas contar con autoridad para obligarla legalmente.",
+  "section2_title": "CATÁLOGO DE SERVICIOS Y PRECIOS",
+  "section2_content": "Ofrecemos servicios digitales de marketing, branding, diseño gráfico y publicidad organizados en paquetes con alcances específicos. Todos los precios incluyen IVA y están expresados en pesos mexicanos. Nos reservamos el derecho de modificar precios sin previo aviso, respetando siempre los compromisos ya adquiridos.",
+  "section3_title": "PROCESO DE CONTRATACIÓN",
+  "section3_content": "Paso 1 – Selección: Agregas el servicio deseado al carrito de compras\nPaso 2 – Checkout: Proporcionas información de contacto y facturación\nPaso 3 – Pago: Procesas el pago mediante las pasarelas habilitadas\nPaso 4 – Confirmación: Recibes email con confirmación de compra y factura electrónica.\nLa compra se perfecciona cuando recibes la confirmación por correo electrónico. Hasta ese momento existe un contrato válido entre las partes.",
+  "section4_title": "MÉTODOS DE PAGO ACEPTADOS",
+  "section4_content": "Aceptamos pagos mediante tarjetas de crédito y débito emitidas por instituciones bancarias nacionales e internacionales que operen en México. Todos los cargos se procesan en pesos mexicanos (MXN) a través de nuestra pasarela de pago segura, la cual cumple con los más altos estándares de protección y confidencialidad de datos.\nLos precios de los productos y servicios están expresados en pesos mexicanos (MXN) y son más IVA, salvo que expresamente se indique lo contrario. El importe total a pagar, incluidos impuestos y comisiones aplicables, se mostrará antes de confirmar la transacción.\nEl procesamiento del pago se considerará exitoso una vez que la institución bancaria haya autorizado la operación y el sistema confirme la recepción del monto correspondiente.",
+  "section5_title": "OBLIGACIONES DEL CLIENTE",
+  "section5_content": "Proporcionar información completa y veraz: Datos de contacto, especificaciones del proyecto, materiales necesarios (logos, fotografías, textos, accesos a plataformas).\nResponder en tiempo: Tienes 5 días hábiles para revisar y aprobar cada entregable. Si no respondes en este plazo, se considera aprobado automáticamente y continuamos con la siguiente fase.\nFacilitar accesos necesarios: Para servicios que requieren gestión de redes sociales, email marketing o publicidad digital, debes proporcionar credenciales de administrador o permisos necesarios.\nCumplir con derechos de autor: Garantizas que cualquier material que nos proporciones (imágenes, textos, música) no infringe derechos de terceros.",
+  "section6_title": "ENTREGABLES Y PLAZOS",
+  "section6_content": "Cada servicio cuenta con alcances, características y objetivos claramente definidos en su descripción o propuesta comercial, los cuales determinan el tipo y número de entregables comprometidos. Antes de iniciar cualquier proyecto, se acordará con el cliente un cronograma estimado de ejecución y entrega, adaptado a la complejidad, volumen de trabajo y necesidades particulares de cada caso.\nLos plazos de entrega comenzarán a correr únicamente a partir del momento en que el cliente haya proporcionado toda la información, materiales, archivos o accesos necesarios para el correcto desarrollo del servicio. Cualquier demora en la entrega de dichos elementos podrá afectar el calendario originalmente previsto, sin que ello implique incumplimiento por parte de la empresa.\nEn caso de requerir modificaciones, ajustes o entregas adicionales no contempladas inicialmente, estas se cotizarán y calendarizarán por separado. Asimismo, los entregables finales se considerarán completados una vez que hayan sido validados y aprobados por el cliente, conforme a los términos del servicio contratado.",
+  "section7_title": "REVISIONES Y MODIFICACIONES",
+  "section7_content": "Cada servicio incluye un número específico de rondas de revisión según lo indicado en su descripción. Revisiones adicionales fuera del alcance contratado se cobrarán como servicio extraordinario.\nUna \"revisión\" significa ajustes sobre el trabajo presentado. Cambios que implican rehacer completamente el concepto o dirección creativa se consideran un nuevo proyecto.",
+  "section8_title": "PROPIEDAD INTELECTUAL",
+  "section8_content": "Trabajo final entregado: Una vez pagado completamente el servicio, te transferimos los derechos de uso sobre los entregables para que los utilices en tu negocio. Conservamos el derecho de usar el proyecto en nuestro portafolio y materiales promocionales.\nArchivos fuente: No incluimos archivos editables (PSD, AI, etc.) salvo que estén expresamente indicados en la descripción del servicio. Si los requieres, puedes solicitarlos con costo adicional.\nMarca 21 Feet: Todos nuestros desarrollos, metodologías, procesos y marca son propiedad exclusiva de AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "section9_title": "SUSPENSIÓN Y TERMINACIÓN",
+  "section9_content": "Podemos suspender o cancelar el servicio si:\n● Proporcionas información falsa o fraudulenta\n● Incumples con tus obligaciones de pago\n● Usas nuestros servicios para fines ilegales o poco éticos\n● Faltas de respeto al equipo o mantienes conducta abusiva\nEn caso de terminación anticipada por causa imputable al cliente, no procede reembolso alguno.",
+  "section10_title": "LIMITACIÓN DE RESPONSABILIDAD",
+  "section10_content": "Nuestros servicios de marketing y publicidad no garantizan resultados específicos de ventas, alcance o engagement. Trabajamos con mejores prácticas de la industria, pero los resultados dependen de múltiples factores fuera de nuestro control (mercado, competencia, producto, timing, presupuesto).\nNo somos responsables por pérdidas de oportunidad comercial, daños indirectos, suspensión de cuentas en plataformas de terceros, cambios en algoritmos de redes sociales, o problemas técnicos en servidores externos.\nNuestra responsabilidad máxima se limita al monto pagado por el servicio específico en cuestión.",
+  "section11_title": "CONFIDENCIALIDAD",
+  "section11_content": "Mantenemos confidencial toda información estratégica, comercial o sensible que compartas durante la prestación del servicio. No la divulgamos a terceros salvo que sea necesario para ejecutar el proyecto. Esta obligación permanece vigente incluso después de terminada la relación comercial.",
+  "section12_title": "FUERZA MAYOR",
+  "section12_content": "No seremos responsables por retrasos o incumplimientos causados por circunstancias fuera de nuestro control razonable: desastres naturales, pandemias, conflictos bélicos, cortes de energía, fallas en servicios de internet, cambios regulatorios, o suspensiones de plataformas digitales de terceros.",
+  "section13_title": "LEY APLICABLE Y JURISDICCIÓN",
+  "section13_content": "Estos términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier disputa se resolverá en los tribunales competentes de la Ciudad de México, renunciando a cualquier otra jurisdicción.",
+  "section14_title": "NOTIFICACIONES",
+  "section14_content": "Todas las comunicaciones oficiales se realizan al correo electrónico proporcionado durante la compra. Es tu responsabilidad mantenerlo actualizado y revisar regularmente incluyendo la carpeta de spam.",
+  "section15_title": "DIVISIBILIDAD",
+  "section15_content": "Si alguna cláusula de estos términos se declara inválida o inexigible, el resto permanece vigente y vinculante.",
+  "section16_title": "MODIFICACIONES",
+  "section16_content": "Podemos actualizar estos términos ocasionalmente. Los cambios aplican para compras futuras. Servicios ya contratados se rigen por los términos vigentes al momento de la compra.",
+  "validity": "Vigencia: Septiembre 2026",
+  "contact_info": "Contacto"
+},
     "refunds": {
-      "title": "Política de Reembolsos y Cancelaciones",
-      "last_updated": "Última actualización: 1 de enero de 2024",
-      "section1_title": "Cancelaciones",
-      "section1_content": "Los clientes pueden cancelar sus pedidos dentro de las 24 horas posteriores a la compra, siempre que el servicio no haya sido iniciado. Para solicitar una cancelación, contacte a administracion@lumetra.mx.",
-      "section2_title": "Reembolsos",
-      "section2_content": "Los reembolsos se procesarán en un plazo de 5 a 10 días hábiles después de la aprobación de la solicitud. El reembolso se realizará a través del mismo método de pago utilizado en la compra original.",
-      "section3_title": "Excepciones",
-      "section3_content": "No se otorgarán reembolsos para servicios que ya hayan sido iniciados o completados. Los servicios personalizados pueden tener términos específicos acordados con el cliente.",
-      "contact_info": "Contacto"
-    }
+  "title": "Política de devoluciones y reembolsos",
+  "company": "AGENCIA DIGITAL 21FEET S.A. DE C.V.",
+  "intro": "Esta política establece los procedimientos y condiciones bajo las cuales puedes solicitar la cancelación de los servicios contratados en nuestra tienda digital.",
+  "section1_title": "NATURALEZA DE LOS SERVICIOS",
+  "section1_paragraphs": [
+    "Los servicios ofrecidos por 21 Feet son digitales, personalizados y hechos a medida, por lo que desde el momento del pago se destinan recursos humanos, técnicos y creativos de forma inmediata.",
+    "Por ello, todas las solicitudes de cancelación o reembolso se analizan de forma individual, conforme al momento en que se presenta la solicitud y al estado del proyecto."
+  ],
+  "section2_title": "MOTIVOS DE CANCELACIÓN",
+  "section2_paragraphs": [
+    "Las cancelaciones únicamente podrán solicitarse bajo las siguientes circunstancias:"
+  ],
+  "section2_items": [
+    "Por decisión del cliente: el cliente puede desistir del servicio en cualquier momento; sin embargo, esto no genera derecho a reembolso, conforme a las condiciones de esta política.",
+    "Por incumplimiento del cliente: si el cliente no proporciona información, materiales o accesos necesarios para la ejecución del servicio, no responde a comunicaciones o incumple con sus obligaciones contractuales, el proyecto podrá darse por terminado sin reembolso alguno.",
+    "Por causa atribuible a 21 Feet: si por motivos directamente atribuibles a 21 Feet no fuera posible ejecutar el servicio contratado, se procederá al reembolso del monto pagado, siempre que no se haya iniciado el desarrollo del proyecto."
+  ],
+  "section3_title": "CASOS EN LOS QUE NO APLICA REEMBOLSO",
+  "section3_paragraphs": [
+    "No procederá ningún tipo de reembolso en los siguientes supuestos:"
+  ],
+  "section3_items": [
+    "Cuando el proyecto haya iniciado parcial o totalmente.",
+    "Cuando el cliente decida cancelar por motivos personales o de conveniencia, sin que exista incumplimiento por parte de 21 Feet.",
+    "Cuando el retraso o imposibilidad de ejecución derive de falta de respuesta o entrega de información por parte del cliente.",
+    "Cuando el servicio implique inversión en publicidad, contratación de terceros o compra de recursos externos, ya que estos montos son no recuperables.",
+    "Cuando se haya incurrido en contra cargos o disputas bancarias iniciadas unilateralmente por el cliente."
+  ],
+  "section4_title": "PROCEDIMIENTO DE CANCELACIÓN Y REEMBOLSO",
+  "section4_items": [
+    "1. Solicitud formal: el cliente deberá enviar una solicitud por escrito al correo administracion@lumetra.mx, indicando:",
+    "○ Nombre completo o razón social.",
+    "○ Número de pedido o referencia de compra.",
+    "○ Servicio contratado.",
+    "○ Motivo de la solicitud.",
+    "2. Evaluación: el equipo de 21 Feet analizará la solicitud y verificará el estado del proyecto y las condiciones aplicables.",
+    "3. Resolución: el cliente recibirá una respuesta por correo electrónico en un plazo máximo de 5 días hábiles, indicando si procede o no el reembolso.",
+    "4. Forma de reembolso: en caso de proceder, el reembolso se realizará exclusivamente por el mismo medio de pago utilizado al momento de la compra.",
+    "El tiempo de acreditación dependerá de la institución bancaria o plataforma de pago, pudiendo tardar entre 5 y 20 días hábiles una vez autorizado."
+  ],
+  "section5_title": "ERRORES DE COBRO",
+  "section5_paragraphs": [
+    "En caso de cargos duplicados o errores en el procesamiento del pago, se verificará la operación y, una vez confirmado el error, se gestionará el reembolso inmediato por el mismo medio de pago."
+  ],
+  "section6_title": "DISPUTAS Y CONTRACARGOS",
+  "section6_paragraphs": [
+    "Antes de iniciar cualquier disputa bancaria o contracargo, el cliente deberá agotar el proceso interno de revisión y reembolso previsto en esta política.",
+    "En caso de que se presente un contracargo sin previo aviso:"
+  ],
+  "section6_items": [
+    "El servicio se suspenderá de inmediato.",
+    "Se proporcionará la evidencia correspondiente a la institución financiera.",
+    "Podrá limitarse la posibilidad de futuras contrataciones con 21 Feet."
+  ],
+  "section7_title": "MODIFICACIONES Y APLICACIÓN",
+  "section7_paragraphs": [
+    "Esta política puede ser actualizada para reflejar cambios en nuestras operaciones o en la legislación aplicable. Las solicitudes de cancelación y reembolso se regirán por la versión vigente al momento de su presentación."
+  ],
+  "section8_title": "CONTACTO",
+  "section8_paragraphs": [
+    "Para cualquier solicitud o aclaración relacionada con cancelaciones o reembolsos, puedes comunicarte al correo: administracion@lumetra.mx"
+  ]
+}
   },
   "payment": {
     "processing_error": "Error al procesar el pago. Por favor, intenta nuevamente.",

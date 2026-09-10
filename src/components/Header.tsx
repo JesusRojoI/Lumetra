@@ -3,15 +3,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { useTranslations } from 'next-intl';
-import { formatCurrency, formatPrice } from '@/utils/format';
+import { formatPrice } from '@/utils/format';
 
 export default function Header() {
   const { items, removeItem, getSubtotal, getItemCount, getLocalizedItemName } = useCart();
   const { locale, setLocale } = useLanguage();
   const t = useTranslations('common');
+  const router = useRouter();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const cartRef = useRef<HTMLDivElement>(null);
@@ -29,6 +31,7 @@ export default function Header() {
 
   const handleLanguageChange = () => {
     setLocale(locale === 'es' ? 'en' : 'es');
+    router.refresh();
   };
 
   const itemCount = getItemCount();

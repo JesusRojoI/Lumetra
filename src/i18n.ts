@@ -1,17 +1,28 @@
+// src/i18n.ts
 import { getRequestConfig } from 'next-intl/server';
+import { headers } from 'next/headers';
 
-export default getRequestConfig(async ({ locale }) => {
-  // Usar 'es' como locale por defecto si no hay locale
-  const currentLocale = locale || 'es';
-  
+const LOCALES = ['es', 'en'] as const;
+const DEFAULT_LOCALE = 'es';
+const TIME_ZONE = 'America/Mexico_City';
+
+export default getRequestConfig(async () => {
+  const headerLocale = headers().get('x-next-intl-locale');
+  const locale = LOCALES.includes(headerLocale as any)
+    ? (headerLocale as string)
+    : DEFAULT_LOCALE;
+
   try {
     return {
-      messages: (await import(`../messages/${currentLocale}.json`)).default
+      locale,
+      timeZone: TIME_ZONE,
+      messages: (await import(`../messages/${locale}.json`)).default,
     };
-  } catch (error) {
-    // Fallback a español si no encuentra el archivo
+  } catch {
     return {
-      messages: (await import(`../messages/es.json`)).default
+      locale: DEFAULT_LOCALE,
+      timeZone: TIME_ZONE,
+      messages: (await import(`../messages/es.json`)).default,
     };
   }
 });
