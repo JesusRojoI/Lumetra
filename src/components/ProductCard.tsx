@@ -24,10 +24,17 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
   const localizedProduct = getLocalizedProduct(product, locale);
 
   const handleAddToCart = () => {
+    // Si ya está agregado, redirigir al carrito
+    if (isAdded) {
+      window.location.href = '/carrito/';
+      return;
+    }
+    
     if (product.custom) {
       window.location.href = `/product/${product.slug}/`;
       return;
     }
+    
     addItem(localizedProduct);
     setIsAdded(true);
   };
@@ -77,13 +84,13 @@ export default function ProductCard({ product, compact = false }: ProductCardPro
           </Link>
         ) : (
           <button
-            onClick={handleAddToCart}
-            className={`w-full text-sm ${
-              isAdded ? 'btn-outline' : 'btn-primary'
-            }`}
-          >
-            {isAdded ? t('buttons.viewCart') : t('buttons.addToCart')}
-          </button>
+  onClick={handleAddToCart}
+  className={`w-full text-sm ${
+    isAdded ? 'btn-outline-inverted' : 'btn-primary'
+  }`}
+>
+  {isAdded ? t('buttons.viewCart') : t('buttons.addToCart')}
+</button>
         )}
       </div>
     </div>
