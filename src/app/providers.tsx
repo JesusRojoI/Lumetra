@@ -62,6 +62,7 @@ export function Providers({ children, initialLocale = 'es' }: ProvidersProps) {
   return (
     <NextIntlClientProvider
       locale={locale}
+      // @ts-expect-error: next-intl no tipa arrays, pero los soporta en runtime
       messages={messages}
       timeZone={TIME_ZONE}
     >
