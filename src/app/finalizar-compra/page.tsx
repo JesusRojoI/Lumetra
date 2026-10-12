@@ -22,7 +22,7 @@ import {
   validateCVV,
   validatePostalCode
 } from '@/utils/validation';
-import { processKeycopPayment } from '@/utils/keycop';
+import { processEtominPayment } from '@/utils/etomin';
 import { sendEmail } from '@/utils/email';
 
 export default function CheckoutPage() {
@@ -178,7 +178,7 @@ export default function CheckoutPage() {
         }
       };
 
-      const paymentResult = await processKeycopPayment(paymentData);
+      const paymentResult = await processEtominPayment(paymentData);
 
       if (paymentResult.success) {
         const orderData = {
@@ -456,15 +456,15 @@ export default function CheckoutPage() {
                     <Image
                       src="/keycop.png"
                       alt="Keycop"
-                      width={40}
-                      height={40}
+                      width={80}
+                      height={80}
                       className="rounded"
                     />
                     <Image
                       src="/secure.svg"
                       alt="Secure"
-                      width={30}
-                      height={30}
+                      width={60}
+                      height={60}
                     />
                   </div>
 
