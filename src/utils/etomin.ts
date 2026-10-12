@@ -5,6 +5,7 @@ import axios from 'axios';
 export interface PaymentData {
   amount: number;
   orderId: string;
+  currency?: string;
   cardData: {
     number: string;
     name: string;
@@ -32,16 +33,48 @@ export interface PaymentData {
   };
 }
 
-// URL de Etomin (desde env var, con fallback)
+// URL desde env var, con fallback a la oficial
 const API_URL =
   process.env.ETOMIN_BASE_URL || 'https://pagos.etomin.com/api/v1';
 
-async function getAuthToken() {
+// Instancia global con los headers base que exige Etomin
+const etominClient = axios.create({
+  baseURL: API_URL,
+  headers: {
+    accept: 'application/json',
+    'content-type': 'application/json',
+  },
+});
+
+/**
+ * Normaliza el año de expiración a 2 dígitos.
+ * Acepta: "26", "2026", "  26  ", etc.
+ * Devuelve siempre "YY" (ej. "26").
+ */
+function normalizeYear(year: string | number): string {
+  const str = String(year).trim().replace(/\D/g, ''); // solo dígitos
+  if (str.length === 4) return str.slice(-2); // "2026" -> "26"
+  if (str.length === 2) return str; // "26" -> "26"
+  if (str.length === 1) return str.padStart(2, '0'); // "6" -> "06"
+  // Fallback: últimos 2 dígitos
+  return str.slice(-2).padStart(2, '0');
+}
+
+/**
+ * Normaliza el mes de expiración a 2 dígitos.
+ * Acepta: "1", "01", " 1 ", etc.
+ */
+function normalizeMonth(month: string | number): string {
+  const str = String(month).trim().replace(/\D/g, '');
+  return str.padStart(2, '0'); // "1" -> "01"
+}
+
+async function getAuthToken(): Promise<string> {
   try {
     console.log('Attempting authentication with Etomin...');
     console.log('API URL:', API_URL);
 
-    const { data } = await axios.post(`${API_URL}/signin`, {
+    const { data } = await etominClient.post('/signin', {
       email: process.env.ETOMIN_USER,
       password: process.env.ETOMIN_PASSWORD,
     });
@@ -54,19 +87,25 @@ async function getAuthToken() {
   }
 }
 
-async function tokenizeCard(token: string, payment: PaymentData) {
+async function tokenizeCard(
+  token: string,
+  payment: PaymentData
+): Promise<string> {
   try {
     const card = payment.cardData;
     console.log('Tokenizing card...');
 
-    const { data } = await axios.post(
-      `${API_URL}/card/tokenizer`,
+    const normalizedYear = normalizeYear(card.year);
+    const normalizedMonth = normalizeMonth(card.month);
+
+    const { data } = await etominClient.post(
+      '/card/tokenizer',
       {
         cardData: {
           cardNumber: card.number.replace(/\s/g, ''),
           cardholderName: card.name,
-          expirationYear: card.year,
-          expirationMonth: card.month,
+          expirationYear: normalizedYear,
+          expirationMonth: normalizedMonth,
         },
       },
       {
@@ -90,20 +129,27 @@ export async function processEtominPayment(payment: PaymentData) {
     console.log('Processing payment with amount:', payment.amount);
     console.log('API URL:', API_URL);
     console.log('Etomin User configured:', !!process.env.ETOMIN_USER);
-    console.log('Etomin Password configured:', !!process.env.ETOMIN_PASSWORD);
+    console.log(
+      'Etomin Password configured:',
+      !!process.env.ETOMIN_PASSWORD
+    );
 
     // 1. Autenticación
     const authToken = await getAuthToken();
     console.log('Authentication successful');
 
-    // 2. Tokenización (Sin el CVV)
+    // 2. Tokenización de la tarjeta (Sin el CVV)
     const cardToken = await tokenizeCard(authToken, payment);
     console.log('Card tokenization successful');
 
-    // 3. Ejecución de la Venta
+    // 3. Resolver código de moneda
+    const currency = (payment.currency || 'MXN').toUpperCase();
+    const currencyCode = currency === 'USD' ? '840' : '484';
+
+    // 4. Ejecución de la Venta
     const salePayload = {
       amount: Number(payment.amount),
-      currency: '484',
+      currency: currencyCode,
       reference: payment.orderId,
       customerInformation: {
         firstName: payment.customer.nombre,
@@ -126,16 +172,20 @@ export async function processEtominPayment(payment: PaymentData) {
     };
 
     console.log('Executing sale...');
-    const { data } = await axios.post(`${API_URL}/sale`, salePayload, {
+    const { data } = await etominClient.post('/sale', salePayload, {
       headers: { Authorization: `Bearer ${authToken}` },
     });
 
     console.log('Sale response:', data);
 
+    // Validación robusta del status (case-insensitive)
+    const isApproved = data.status?.toUpperCase() === 'APPROVED';
+
     return {
-      success: data.status === 'APPROVED' || data.status === 'approved',
+      success: isApproved,
       orderId: data.orderId,
       reference: data.reference,
+      transactionId: data.transactionId,
       status: data.status,
       data: data,
     };
@@ -155,7 +205,10 @@ export async function processEtominPayment(payment: PaymentData) {
           : error.message === 'tokenization_failed'
             ? 'token_error'
             : 'payment_error',
-      details: error.response?.data?.message || error.message,
+      details:
+        error.response?.data?.message ||
+        error.response?.data?.error ||
+        error.message,
     };
   }
 }
